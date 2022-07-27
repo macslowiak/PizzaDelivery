@@ -1,0 +1,11 @@
+﻿using System.Numerics;
+
+namespace PizzaDelivery.Models
+{
+    public class PizzaOrder
+    {
+        public BigInteger Id { get; set; }
+        public string PizzaName { get; set; }
+        public float BasePrice { get; set; }
+    }
+}
