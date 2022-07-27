@@ -13,6 +13,9 @@
 		<p>Your order for the @Model.PizzaName Pizza is ready!</p>
 		<p>Total price for your order is: @Model.PizzaPrice$</p>
 		<br />
-		<a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="ThankYou">Confirm Order</a>
+		<a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="ThankYou"
+		asp-route-PizzaName="@Model.PizzaName"  
+		asp-route-PizzaPrice="@Model.PizzaPrice">
+					Confirm Order</a>
 	</div>
 </div>
