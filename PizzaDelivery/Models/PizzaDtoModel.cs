@@ -1,6 +1,6 @@
 ﻿namespace PizzaDelivery.Models
 {
-    public class PizzasModel
+    public class PizzaDtoModel
     {
         public string ImageTitle { get; set; }
         public string Name { get; set; }

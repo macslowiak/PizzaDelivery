@@ -7,7 +7,7 @@ namespace PizzaDelivery.Pages.Forms
     public class CustomPizzaModel : PageModel
     {
         [BindProperty]
-        public PizzasModel Pizza { get; set; }
+        public PizzaDtoModel Pizza { get; set; }
         public void OnGet()
         {
         }
