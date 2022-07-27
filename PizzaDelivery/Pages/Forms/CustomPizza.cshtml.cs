@@ -29,10 +29,10 @@ namespace PizzaDelivery.Pages.Forms
             if (Pizza.Ham) PizzaPrice += 1;
             if (Pizza.Beef) PizzaPrice += 1;
 
-            Pizza.Name = "Custom";
-            Pizza.ImageTitle = "Create";
+            var PizzaName = Pizza.Name;
+            var ImageTitle = "Create";
 
-            return RedirectToPage("/Checkout/Checkout",new {Pizza.Name, PizzaPrice, Pizza.ImageTitle});
+            return RedirectToPage("/Checkout/Checkout",new {PizzaName, PizzaPrice, ImageTitle});
         }
     }
 }
